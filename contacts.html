@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/popup.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <!-- Popup loading with script(Components/Popup.js) -->
+    <div class="popup popup-closed" id="popup"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="header__navbar">
+                <a href="index.html" class="header__navbar__logo"><img src="images/logo.png"></img></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                <div class="header__navbar__buttons">
+                    <button class="btn-secondary" onclick="popup.renderPopupLogin()">Log In</button>
+                    <button class="btn-green" onclick="popup.renderPopupRegistration()">Sign Up</button>
+                </div>
+                <!-- Shown on Mobile -->
+                <div class="header__navbar__social-media">
+                    <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                </div>
+                <div class="btn-burger" id="btn-burger">
+                    <div></div><div></div><div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="contacts__form">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <h4>Send us your message</h4>
+                <form>
+                    <div class="form-item">
+                        <label for="name">Your name*</label>
+                        <input id="name" type="text" placeholder="Full name"/>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="company">Company name</label>
+                        <input id="company" type="text" placeholder="Company LLC"/>
+                    </div>
+
+
+                    <div class="form-item">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" type="text" placeholder="(999) 999-9999"/>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">Email*</label>
+                        <input id="email" type="email" placeholder="example@gmail.com"/>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="state">What US state are you in?*</label>
+                        <select value="Please select" id="state">
+                            <option value="" disabled selected>Please select</option>
+                            <option value="1">New York</option>
+                            <option value="2">Texas</option>
+                            <option value="3">Florida</option>
+                        </select>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="help">How can we help?*</label>
+                        <input id="help" type="text" placeholder="Describe how we can help you?"/>
+                    </div>
+
+                    <div class="form-item form-item-textarea">
+                        <label for="text-field">Anything else we should know?</label>
+                        <textarea rows="4" id="text-field"></textarea>
+                    </div>
+
+                    <input class="btn-green" type="submit" value="Send Message"/>
+                </form>
+            </div>
+        </div>
+        <div class="contacts__info">
+            <div class="container">
+                <div class="contacts__info__connection">
+                    <h4>Get in touch</h4>
+                    <div class="contacts__info__connection__phone">
+                        <img src="images/phone.svg" alt="Phone">
+                        <p>999-999-99-99</p>
+                    </div>
+                    <div class="contacts__info__connection__email">
+                        <img src="images/mail.svg" alt="Mail">
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="contacts__info__connection__social-media">
+                        <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    </div>
+                    <p>
+                        Task Boosters<br>
+                        LLC2327 Washington St Apt 3c<br>
+                        Hollywood<br>
+                        FL<br>
+                        33020
+                    </p>
+                </div>
+                <div class="contacts__info__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2830.8830445807616!2d-68.7682961!3d44.8035721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cae4b4e2b6507c3%3A0xf704f4dd2c591327!2zOTcgQnJvYWR3YXksIEJhbmdvciwgTUUgMDQ0MDEsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1720042355038!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <img id="btn-up" class="btn-up" src="images/arrow-up.svg" alt="Up">
+
+            <nav class="footer__navbar">
+                <a href="index.html" class="footer__navbar__logo"><img src="images/logo.png"></img></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contacts__info">
+
+                <div class="footer__contacts__info__text">
+                    <p class="footer__contacts__info__text__phone">999-999-99-99</p>
+                    <p class="footer__contacts__info__text__address">LLC2327 Washington St Apt 3c<br>
+                        Hollywood<br>
+                        FL<br>
+                        33020<br></p>
+                </div>
+
+                <div class="footer__contacts__info__links">
+                    <div class="footer__contacts__social-meida">
+                        <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    </div>
+                    <p>2024 © Task Boosters. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="Components/Popup.js"></script>
+</body>
+</html>

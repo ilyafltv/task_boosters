@@ -1,0 +1,53 @@
+/* Root styles */
+:root{
+    --color-light: #FFFFFF; 
+    --color-dark: #1A1A1A;
+    --color-accent: #55A740;
+    --color-dim: #FAFAFA;
+
+    --font-size-main: 14px;
+    --font-size-h1: 72px;
+    --font-size-h2: 46px;
+    --font-size-h3: 36px;
+    --font-size-h4: 24px;
+
+    --font-weight-main: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi: 600;
+}
+
+.policy h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.policy .container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 800px;
+}
+.policy h4 {
+    margin-bottom: 15px;
+}
+.policy p {
+    margin-bottom: 30px;
+}
+.policy {
+    padding: 60px 0 70px;
+}
+
+@media (max-width: 991px) {
+    :root {
+        --font-size-h1: 54px;
+        --font-size-h2: 36px; 
+        --font-size-h4: 24px;
+    }
+    .policy h2 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .policy{
+        padding-bottom: 40px;
+    }
+}

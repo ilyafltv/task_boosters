@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/popup.css">
+    <title>About Us</title>
+</head>
+<body>
+    <!-- Popup loading with script(Components/Popup.js) -->
+    <div class="popup popup-closed" id="popup"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="header__navbar">
+                <a href="index.html" class="header__navbar__logo"><img src="images/logo.png"></img></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                <div class="header__navbar__buttons">
+                    <button class="btn-secondary" onclick="popup.renderPopupLogin()">Log In</button>
+                    <button class="btn-green" onclick="popup.renderPopupRegistration()">Sign Up</button>
+                </div>
+                <!-- Shown on Mobile -->
+                <div class="header__navbar__social-media">
+                    <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                </div>
+                <div class="btn-burger" id="btn-burger">
+                    <div></div><div></div><div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Task Boosters -->
+        <div class="about-us">
+
+            <div class="container">
+                <div class="about-us__pluses">
+                    <div>Hight Quality</div>
+                    <div class="about-us__pluses__hide">Largest Database</div>
+                    <div>Optimal Price</div>
+                </div>
+                <h2>About
+                    <span>Task Boosters</span>
+                </h2>
+                <p>Welcome to Task Boosters - your reliable support in the world of outsourcing and recruitment. Our mission is to make it easier for you to manage your business by providing highly qualified specialists to perform a variety of tasks.<br><br>
+
+                    We are convinced that the success of a business depends on the professionalism of the team, and our goal is to provide you with just such people. </p>
+                
+                <div class="about-us__buttons">
+                    <button class="btn-black" onclick="popup.renderPopupRegistration()">
+                        Cooperate
+                        <img src="images/arrow-btn.svg">
+                    </button>
+                    <div class="about-us__social-media">
+                        <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        <!-- Our Team -->
+        <div class="team">
+            <div class="container">
+                <img src="images/team.jpg" alt="Our Team">
+                <div class="team__text">
+                    <h3>Proffesional</h3>
+                    <p>Each of our employees is carefully selected and vetted to ensure the highest quality and reliability of our services. We are proud of our team of highly qualified and dedicated professionals.<br><br>
+
+                    Our team is the foundation of our success and the main resource that helps us provide exceptional service to our clients.</p>
+                    <button class="btn-secondary" onclick="location.href='contacts.html'">
+                        Contact Us
+                        <img src="images/arrow-btn-black.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <img id="btn-up" class="btn-up" src="images/arrow-up.svg" alt="Up">
+
+            <nav class="footer__navbar">
+                <a href="index.html" class="footer__navbar__logo"><img src="images/logo.png"></img></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contacts__info">
+
+                <div class="footer__contacts__info__text">
+                    <p class="footer__contacts__info__text__phone">999-999-99-99</p>
+                    <p class="footer__contacts__info__text__address">LLC2327 Washington St Apt 3c<br>
+                        Hollywood<br>
+                        FL<br>
+                        33020<br></p>
+                </div>
+
+                <div class="footer__contacts__info__links">
+                    <div class="footer__contacts__social-meida">
+                        <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    </div>
+                    <p>2024 © Task Boosters. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="Components/Popup.js"></script>
+</body>
+</html>

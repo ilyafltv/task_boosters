@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/popup.css">
+    <title>Task Boosters</title>
+</head>
+<body>
+    <!-- Popup loading with script(Components/Popup.js) -->
+    <div class="popup popup-closed" id="popup"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="header__navbar">
+                <a href="index.html" class="header__navbar__logo"><img src="images/logo.png"></img></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                <div class="header__navbar__buttons">
+                    <button class="btn-secondary" onclick="popup.renderPopupLogin()">Log In</button>
+                    <button class="btn-green" onclick="popup.renderPopupRegistration()">Sign Up</button>
+                </div>
+                <!-- Shown on Mobile -->
+                <div class="header__navbar__social-media">
+                    <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                </div>
+                <div class="btn-burger" id="btn-burger">
+                    <div></div><div></div><div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome-Block -->
+        <div class="block-welcome">
+
+            <div class="container">
+                <div class="block-welcome__pluses">
+                    <div class="block-welcome__pluses__boost">Boost your business</div>
+                    <div>Delegate tasks</div>
+                    <div>Search specialists</div>
+                </div>
+                <h1>Entrust the Work
+                    <span>to Professionals</span>
+                </h1>
+                <p>Automate your business and save your time and money by delegating tasks to specialists.</p>
+                
+                <div class="block-welcome__buttons">
+                    <button class="btn-black" onclick="popup.renderPopupRegistration()">
+                        Get Started
+                        <img src="images/arrow-btn.svg">
+                    </button>
+                    <button class="btn-secondary" onclick="location.href='about.html'">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- About Us -->
+        <div class="about-boosters">
+             <div class="container">
+                <div class="about-boosters__gallery">
+                    <div class="about-boosters__gallery__column">
+                        <img src="images/worker1.jpg" alt="Our specialists">
+                        <img src="images/worker3.jpg" alt="Our specialists">
+                    </div>
+                    <div class="about-boosters__gallery__column">
+                        <img src="images/worker2.jpg" alt="Our specialists">
+                        <img src="images/worker4.jpg" alt="Our specialists">
+                    </div>
+                    
+                </div>
+                <div class="about-boosters__text">
+                    <h2>Look for workers with Task Booster</h2>
+                    <p>Task Boosters provides qualified professionals to a variety of industries. Our team guarantees high-quality and prompt completion of tasks, allowing you to focus on the main aspects of your business.<br><br>
+
+                    We are your reliable partner in achieving success.</p>
+                    <div class="about-boosters__buttons">
+                        <button class="btn-green" onclick="popup.renderPopupRegistration()">
+                            Cooperate
+                            <img src="images/arrow-btn.svg">
+                        </button>
+                        <button class="btn-secondary" onclick="location.href='contacts.html'">
+                            Contacts Us
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <!-- Advantages -->
+        <div class="advantages">
+            <div class="container">
+                <div class="advantages__card">
+                    <img src="images/advantages_verified.svg">
+                    <h4>Verified workers</h4>
+                    <p>We carefully select and vet each specialist to ensure a high level of competence and reliability.</p>
+                </div>
+                <div class="advantages__card">
+                    <img src="images/advantages_quality.svg">
+                    <h4>Quality</h4>
+                    <p>Our team ensures a high standard of execution, carefully following all customer requirements and expectations.</p>
+                </div>
+                <div class="advantages__card hidden">
+                    <img src="images/advantages_database.svg">
+                    <h4>Largest database</h4>
+                    <p>We have the largest database of specialists from various industries. This allows you to quickly find ideal candidates for your needs.</p>
+                </div>
+                <div class="advantages__card hidden">
+                    <img src="images/advantages_resource.svg">
+                    <h4>Resource Savings</h4>
+                    <p>We provide ready-to-work specialists, which optimizes operational processes, allowing efficient use of resources.</p>
+                </div>
+                <div class="advantages__card hidden">
+                    <img src="images/advantages_time.svg">
+                    <h4>Time Savings</h4>
+                    <p>Task Boosters takes care of all aspects of recruitment and personnel management, freeing up your time for strategic tasks.</p>
+                </div>
+            </div>
+            <button class="btn-secondary" id="btn-show-advantages">Show More</button>
+        </div>
+
+        <!-- Stats --> 
+        <div class="stats">
+            <div class="container">
+
+                <div class="stats__text">
+                    <h2>Improve your business by delegating tasks</h2>
+                    <p>We take on routine and specialized tasks, providing proven and qualified specialists.By trusting us to complete tasks, you free up time and resources for the strategic development and growth of your business.</p>
+
+                    <div class="stats__text__numbers">
+                        <div class="stats__text__number">
+                            <span>1500+</span>
+                            <p>Successful Candidates</p>
+                        </div>
+                        <div class="stats__text__number">
+                            <span>98%</span>
+                            <p>Customer Satisfaction</p>
+                        </div>
+                        <div class="stats__text__number">
+                            <span>30%</span>
+                            <p>Time Saving</p>
+                        </div>
+                    </div>
+
+                    <div class="stats__buttons">
+                        <button class="btn-green" onclick="popup.renderPopupRegistration()">
+                            Cooperate
+                            <img src="images/arrow-btn.svg">
+                        </button>
+                        <button class="btn-secondary" onclick="location.href='contacts.html'">
+                            Contacts Us
+                        </button>
+                    </div>
+                </div>
+
+                <div class="stats__gallery">
+                    <img src="images/stats.jpg" alt="Our Employees">
+                </div>                
+            </div>
+        </div>
+
+        <!-- Specialists --> 
+         <div class="specialists">
+            <div class="container">
+                <h2>Specialists</h2>
+                <div class="specialists__cards">
+                    <div class="specialists__card">
+                         <img src="images/specialists_programmer.jpg" alt="Programmer">
+                         <div class="specialists__card__text">
+                            <h4>Programmer</h4>
+                            <p>Our programmers have deep knowledge in various technologies. They are ready to implement projects of any complexity.</p>
+                            <a class="link-cooperate" onclick="popup.renderPopupRegistration()">
+                                Cooperate
+                                <img src="images/arrow-btn-green.svg">
+                            </a>
+                         </div>
+                    </div>
+
+                    <div class="specialists__card">
+                        <img src="images/specialists_lawyer.jpg" alt="Lawyer">
+                        <div class="specialists__card__text">
+                           <h4>Lawyer</h4>
+                           <p>Our lawyers specialize in various areas of law and are ready to protect your interests, observing all the rules of the law.</p>
+                           <a class="link-cooperate" onclick="popup.renderPopupRegistration()">
+                               Cooperate
+                               <img src="images/arrow-btn-green.svg">
+                           </a>
+                        </div>
+                   </div>
+
+                   <div class="specialists__card hidden">
+                            <img src="images/specialists_tutor.jpg" alt="Tutor">
+                            <div class="specialists__card__text">
+                            <h4>Tutor</h4>
+                            <p>Tutors help students achieve academic success, improve knowledge and develop skills.</p>
+                            <a class="link-cooperate" onclick="popup.renderPopupRegistration()">
+                                Cooperate
+                                <img src="images/arrow-btn-green.svg">
+                            </a>
+                            </div>
+                    </div>
+
+                    <div class="specialists__card hidden">
+                            <img src="images/specialists_driver.jpg" alt="Driver">
+                            <div class="specialists__card__text">
+                            <h4>Driver</h4>
+                            <p>Our qualified drivers provide safe and reliable transportation services. They have experience in driving various vehicles.</p>
+                            <a class="link-cooperate" onclick="popup.renderPopupRegistration()">
+                                Cooperate
+                                <img src="images/arrow-btn-green.svg">
+                            </a>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button class="btn-secondary" id="btn-show-specialists">Show More</button>
+         </div>
+        <!-- Start -->
+        <div class="start">
+            <div class="container">
+                <div class="start-table">
+
+                    <h2>Ready to <span>Start Recruiting?</span></h2>
+                    <p>Task Boosters will help you find the perfect talent for your business. We offer fast and efficient recruitment, taking into account all your requirements and preferences. Take a step towards improving your business now!</p>
+                    <button class="btn-green" onclick="popup.renderPopupRegistration()">
+                        Find Employees
+                        <img src="images/arrow-btn.svg">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <!-- Reviews -->
+        <div class="reviews">
+            <img src="images/arrow.svg" alt="Prev" class="slider__arrow slider__arrow-left">
+            <div class="container">
+                <h2>Reviews</h2>
+                <div class="slider-block">
+                    <div class="container__slider">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <div class="slide">
+                                    <div class="review">
+                                        <div class="review__info">
+                                            <img src="images/reviews_1.jpg" alt="Avatar">
+                                            <h4>Jhon Franklin</h4>
+                                        </div>
+                                        <div class="review__content">
+                                            <p>Thanks to them, we were able to focus on business development, knowing that personnel issues had been resolved. I recommend Task Boosters to anyone looking for a reliable and qualified recruitment partner!</p>
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        <div class="review__info">
+                                            <img src="images/reviews_2.jpg" alt="Avatar">
+                                            <h4>Diana Smith</h4>
+                                        </div>
+                                        <div class="review__content">
+                                            <p>I was pleasantly surprised by the quality of the specialists provided and the level of service. The team approached staff recruitment quickly and professionally, which allowed me to focus on other important aspects of the business. I found excellent employees who fit perfectly into our team.</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                
+                                <div class="slide hidden">
+                                    <div class="review">
+                                        <div class="review__info">
+                                            <img src="images/reviews_3.jpg" alt="Avatar">
+                                            <h4>Emily Johnson</h4>
+                                        </div>
+                                        <div class="review__content">
+                                            <p>The team not only quickly found a candidate, but also did so taking into account all our requirements and the company’s conditions. Now I am confident that our business is in good hands, because Task Boosters really know their stuff.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        <div class="review__info">
+                                            <img src="images/reviews_4.jpg" alt="Avatar">
+                                            <h4>John Anderson</h4>
+                                        </div>
+                                        <div class="review__content">
+                                            <p>Working with Task Boosters, I was pleasantly surprised by their income and speed of recruiting. Our company was looking for qualified specialists for a long time, and Task Boosters were able to find exactly those who ideally suited our requirements. Thanks for the quality work</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-block__pagination">
+                            <span class="slider-block__pagination__dot active"></span>
+                            <span class="slider-block__pagination__dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-secondary" id="btn-show-reviews">Show more</button>
+
+        </div>
+        <img src="images/arrow.svg" alt="Next" class="slider__arrow slider__arrow-right">
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <img id="btn-up" class="btn-up" src="images/arrow-up.svg" alt="Up">
+
+            <nav class="footer__navbar">
+                <a href="index.html" class="footer__navbar__logo"><img src="images/logo.png"></img></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contacts__info">
+
+                <div class="footer__contacts__info__text">
+                    <p class="footer__contacts__info__text__phone">999-999-99-99</p>
+                    <p class="footer__contacts__info__text__address">LLC2327 Washington St Apt 3c<br>
+                        Hollywood<br>
+                        FL<br>
+                        33020<br></p>
+                </div>
+
+                <div class="footer__contacts__info__links">
+                    <div class="footer__contacts__social-meida">
+                        <a href="#"><img src="images/linked_in.svg" alt="LinkedIn"></a>
+                        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    </div>
+                    <p>2024 © Task Boosters. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="Components/Popup.js"></script>
+</body>
+</html>

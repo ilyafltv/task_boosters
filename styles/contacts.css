@@ -1,0 +1,128 @@
+/* Root styles */
+:root{
+    --color-light: #FFFFFF; 
+    --color-dark: #1A1A1A;
+    --color-accent: #55A740;
+    --color-dim: #FAFAFA;
+
+    --font-size-main: 14px;
+    --font-size-h1: 72px;
+    --font-size-h2: 46px;
+    --font-size-h3: 36px;
+    --font-size-h4: 24px;
+
+    --font-weight-main: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi: 600;
+}
+.contacts__form {
+    padding: 60px 0 90px;
+}
+.contacts__form h2{
+    margin-bottom: 20px;
+}
+.contacts__form h4{
+    margin-bottom: 10px;
+}
+.contacts__form form {
+    display: flex;
+    width: 100%;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contacts__form .btn-green{
+    max-width: 175px;
+    margin: 0 auto;
+}
+textarea{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.form-item {
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+}
+.form-item-textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contacts__info{
+    padding-bottom: 90px;
+}
+.contacts__form form label{
+    margin-bottom: 5px;
+}
+.contacts__info .container{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.contacts__form form input, form label {
+    box-sizing: border-box;
+    width: 100%;
+}
+.contacts__info h4 {
+    margin-bottom: 20px;
+}
+.contacts__info__connection {
+    min-width: 250px;
+}
+.contacts__info__map {
+    width: 100%;
+}
+.contacts__info__map iframe{
+    height: 300px;
+    width: 100%;
+}
+.contacts__info__connection__phone, .contacts__info__connection__email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contacts__info__connection__email {
+    margin-bottom: 30px;
+}
+.contacts__info__connection__phone img, .contacts__info__connection__email img{
+    margin-right: 10px;
+}
+.contacts__info__connection__social-media img{
+    margin-right: 10px;
+}
+.contacts__info__connection__social-media{
+    margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+    :root {
+        --font-size-h1: 54px;
+        --font-size-h2: 36px; 
+        --font-size-h4: 24px;
+    }
+    .contacts__form {
+        padding: 60px 0 60px;
+    }
+    .form-item {
+        width: 100%;
+    }
+    .contacts__info{
+        padding-bottom: 60px;
+    }
+
+}
+@media (max-width: 575px) {
+    .contacts__info .container{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contacts__info__connection {
+        margin-bottom: 40px;
+    }
+    .contacts__info__map iframe{
+        height: 200px;
+    }
+}
